@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play free browser arcade games instantly. No downloads required.">
+  <title>Pixel Arcade — Free Browser Games</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="./">PIXEL<span>ARCADE</span></a>
+    <span class="header-tag">FREE BROWSER GAMES</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR NEXT HIGH SCORE STARTS HERE</p>
+      <h1>Less scrolling.<br><span>More playing.</span></h1>
+      <p>Simple games. Instant fun. No downloads.</p>
+    </section>
+
+    <section class="game-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FEATURED GAME</p>
+          <h2>Snake Classic</h2>
+        </div>
+        <span class="tag">ARCADE</span>
+      </div>
+
+      <div class="game-layout">
+        <div class="game-box">
+          <div class="game-topbar">
+            <span>PLAYER 01</span>
+            <span>SCORE: <strong id="score">0</strong></span>
+          </div>
+          <canvas id="game" width="400" height="400"
+                  aria-label="Snake game board"></canvas>
+          <div id="message" class="message">
+            Press Start to play
+          </div>
+          <button id="start-button" class="play-button">START GAME</button>
+        </div>
+
+        <aside class="instructions">
+          <h3>How to play</h3>
+          <p>Eat the glowing food and grow your snake. Don't hit the walls or yourself!</p>
+          <h3>Controls</h3>
+          <p>Desktop: arrow keys or W A S D.</p>
+          <p>Mobile: use the direction buttons below.</p>
+          <div class="mobile-controls">
+            <button data-dir="up" aria-label="Move up">▲</button>
+            <div>
+              <button data-dir="left" aria-label="Move left">◀</button>
+              <button data-dir="down" aria-label="Move down">▼</button>
+              <button data-dir="right" aria-label="Move right">▶</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="more-games">
+      <p class="eyebrow">THE ARCADE IS GROWING</p>
+      <h2>More games coming soon</h2>
+      <p>We're building a collection of free games you can play right here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Pixel Arcade · Built for players</p>
+    <p>More games are coming soon.</p>
+  </footer>
+</body>
+</html>
